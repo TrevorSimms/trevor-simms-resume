@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %} - Trevor Simms</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/style.css')}}">
+  </head>
+
+  <body>
+	  <script src="{{url_for('static', filename='script/index.js')}}"></script>
+    <div id="page-container">
+      <div id="content-wrap">
+        <header id="header">
+          <span class="name">Trevor Simms</span> <br>
+          <span class="subtitle">Attention to detail. Service with a positive attitude. Investigate and improve.</span>
+        </header>
+  
+        <nav id="navbar">
+          <a href="/"><span id="ni1">Resume</span></a>
+          <a href="/Contact"><span id="ni2">Contact</span></a>
+          <a href="https://www.linkedin.com/in/christian-trevor-simms-a50a171ba/"><span id="ni3">LinkedIn</span></a>
+          <a href="https://github.com/TrevorSimms"><span id="ni4">Github</span></a>
+        </nav>
+
+        <div class="containmentUnit">
+        {% block page %}
+        {% endblock %}
+        </div>
+      </div>
+
+      <footer id="footer">
+        Trevor Simms
+      </footer>
+    </div>
+  </body>
+
+</html>  
