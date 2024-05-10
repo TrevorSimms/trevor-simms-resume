@@ -7,3 +7,7 @@ Source code for the website version of my resume.
 | SASS |
 | Flask |
 | Python |
+| uWSGI |
+| NGINX |
+| AWS EC2 |
+
