@@ -8,6 +8,6 @@ Source code for the website version of my resume.
 | Flask |
 | Python |
 | uWSGI |
-| NGINX |
+| nginx |
 | AWS EC2 |
 
